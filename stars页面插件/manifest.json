@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "GitHub Stars 智能网格 & 筛选",
+  "version": "8.0",
+  "description": "自动侦测列表状态，网格视图、图标大小调节、未分类筛选，每页100项",
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "matches": ["*://github.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
